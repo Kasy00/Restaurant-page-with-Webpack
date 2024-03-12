@@ -34,7 +34,7 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     color: #fff;
-    background-color: rgba(36, 36, 36, 0.589);
+    background-color: rgba(36, 36, 36, 0.479);
     margin-top: 1.5rem;
 }
 
@@ -85,6 +85,6 @@ nav h1{
     cursor: pointer;
 }
 
-#name-highlight{
+.name-highlight{
     color: rgba(250, 169, 19, 0.747);
 }

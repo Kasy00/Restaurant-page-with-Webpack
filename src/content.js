@@ -2,7 +2,7 @@ export function createHomepage(){
     const content = document.getElementById('content');
 
     const headline = document.createElement('h1');
-    headline.textContent = 'Welcome to our';
+    headline.textContent = 'Welcome to our ';
 
     const nameHeadline = document.createElement('span');
     nameHeadline.textContent = 'Trattoria';
