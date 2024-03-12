@@ -10,6 +10,81 @@ html{
 body{
     font-size: 1.6rem;
     height: 100vh;
-    background-image: url('hero-bg.jpg');
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background: url("./hero-bg.jpg") top center;
     background-size: cover;
+    filter: blur(5px);
+    position: relative;
+    padding: 0;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    z-index: 999;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(36, 36, 36, 0.589);
+    margin-top: 1.5rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    height: 5rem;
+}
+
+nav button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav h1{
+    justify-self: flex-start;
+}
+
+#content{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-60%, -25%);
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#content h1{
+    font-weight: bold;
+}
+
+#content button{
+    width: 12rem;
+    height: 4rem;
+    border-radius: 1.2rem;
+    background: none;
+    color: #fff;
+    border: 1px solid rgb(209, 137, 4);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#name-highlight{
+    color: rgba(250, 169, 19, 0.747);
 }
