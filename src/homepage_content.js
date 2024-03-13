@@ -1,5 +1,7 @@
 export function createHomepage(){
     const content = document.getElementById('content');
+    content.innerHTML = "";
+    content.className = "";
 
     const headline = document.createElement('h1');
     headline.textContent = 'Welcome to our ';
@@ -20,4 +22,6 @@ export function createHomepage(){
     bookTableBtn.textContent = 'Book table';
 
     content.appendChild(bookTableBtn);
+
+    content.classList.add('homePageContent');
 }

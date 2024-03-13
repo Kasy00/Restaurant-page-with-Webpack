@@ -20,6 +20,7 @@ body{
     filter: blur(5px);
     position: relative;
     padding: 0;
+    overflow: hidden;
 }
 
 header{
@@ -54,11 +55,15 @@ nav button{
     color: #fff;
 }
 
+nav button:hover{
+    color: rgba(250, 169, 19, 0.747);
+}
+
 nav h1{
     justify-self: flex-start;
 }
 
-#content{
+.homePageContent{
     position: absolute;
     top: 60%;
     left: 35%;
@@ -68,6 +73,17 @@ nav h1{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.menuPageContent{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    z-index: 999;
+    font-size: 1.1rem;
 }
 
 #content h1{
@@ -85,6 +101,63 @@ nav h1{
     cursor: pointer;
 }
 
+#content button:hover{
+    border: 1px solid #fff;
+    background-color: rgb(209, 137, 4);
+}
+
 .name-highlight{
     color: rgba(250, 169, 19, 0.747);
+}
+
+.sideContainers{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.rightSideContainers{
+    position: absolute;
+    top:30%;
+    right: 0;
+    display: flex;
+    gap: 7rem;
+}
+
+.leftSideContainers{
+    display: flex;
+    gap: 10rem;
+}
+
+.menuBox{
+    background-color: rgba(36, 36, 36, 0.479);
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightCorner{
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+}
+
+.leftCorner{
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
