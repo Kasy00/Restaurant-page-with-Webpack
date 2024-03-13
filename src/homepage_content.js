@@ -15,6 +15,7 @@ export function createHomepage(){
 
     const description = document.createElement('p');
     description.textContent = 'Premium and authentic Italian cuisine';
+    description.style.color = "white";
 
     content.appendChild(description);
 

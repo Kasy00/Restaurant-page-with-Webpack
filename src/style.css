@@ -86,8 +86,30 @@ nav h1{
     font-size: 1.1rem;
 }
 
+.aboutPageContent{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.4rem;
+    z-index: 999;
+    text-align: center;
+    background-color: #fefae0ee;
+}
+
 #content h1{
     font-weight: bold;
+}
+
+#content p{
+    color: #B99470;
+    font-size: 2rem;
+}
+
+.aboutHeaders{
+    color: #C4661F;
 }
 
 #content button{
