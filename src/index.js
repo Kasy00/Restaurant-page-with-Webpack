@@ -1,6 +1,7 @@
 import './style.css';
 import { createHomepage } from './homepage_content';
-import { createMenuPage } from './menu_content';
+import { createMenuPage } from './menupage_content';
+import { createAboutPage } from './aboutpage_content';
 
 document.addEventListener('DOMContentLoaded', function() {
     createHomepage();
@@ -17,3 +18,7 @@ homeBtn.addEventListener('click', () =>{
 menuBtn.addEventListener('click', () => {
     createMenuPage();
 });
+
+aboutBtn.addEventListener('click', () => {
+    createAboutPage();
+})
